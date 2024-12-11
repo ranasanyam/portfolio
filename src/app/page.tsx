@@ -10,7 +10,7 @@ export default function Home() {
         <div className="overflow-hidden pt-[10vh] h-[100vh] bg-background-secondary">
           <div className="h-full flex flex-col sm:flex-row sm:items-center sm:justify-between">
             <div className="text-center sm:text-left p-4 pt-12 sm:pt-4 sm:pl-12 lg:pl-20 sm:w-1/2">
-              <div className="text-xl sm:text-2xl text-gray-200 font-semibold pl-1.5">Hello! I'm</div>
+              <div className="text-xl sm:text-2xl text-gray-200 font-semibold pl-1.5">Hello! I&apos;m</div>
               <div className="text-4xl sm:text-6xl font-bold text-text-primary my-3">Sanyam Rana</div>
               <div className="text-xl sm:text-2xl text-gray-200 font-semibold mt-2 mb-4 sm:mb-8">Fullstack Developer based in India.</div>
               <TypeEffect />
