@@ -1,7 +1,8 @@
 import Navbar from "@/components/Navbar";
 import TypeEffect from "@/components/TypeEffect";
 import { ArrowDownTrayIcon } from "@heroicons/react/24/outline";
-
+import Image from "next/image";
+import profilePic from '../../public/profile.png';
 export default function Home() {
   return (
       <div>
@@ -19,7 +20,7 @@ export default function Home() {
             </div>
             <div className="flex justify-end self-end sm:w-1/2">
               <div className="absolute sm:bottom-0 sm:relative pt-8 overflow-hidden">
-                <img src="/profile.png" alt="Profile Image" />
+                <Image src={profilePic} alt="Profile Image" />
               </div>
             </div>
           </div>
