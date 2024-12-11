@@ -69,7 +69,7 @@ const Navbar: FC = () => {
   return (
     <>
         <nav className={`fixed top-0 left-0 right-0 w-full z-50 transition-transform duration-300 ease-in-out ${isVisible ? 'translate-y-0' : '-translate-y-[120%]'}`}>
-      <div className='bg-background-secondary backdrop-blur-sm shadow-sm'>
+      <div className='bg-background-primary backdrop-blur-sm shadow-sm'>
       <div className='max-w-2xl mx-auto px-4 sm:px-6 lg:px-8'>
         
         <div className='flex md:justify-evenly items-center h-16 space-x-4'>
