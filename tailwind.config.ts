@@ -20,10 +20,12 @@ export default {
         foreground: "var(--foreground)",
       },
       boxShadow: {
+        xs: '#4BFFA5 0px 1px 3px 0px, #4BFFA5 0px 0px 0px 1px',
         sm: '#4BFFA5 0px 1px 10px'
       }
     },
     screens: {
+      xxs: '320px',
       xs: '480px',
       sm: '640px',
       md: '768px',

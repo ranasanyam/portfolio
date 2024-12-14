@@ -1,13 +1,12 @@
-import Navbar from "@/components/Navbar";
 import TypeEffect from "@/components/TypeEffect";
 import { ArrowDownTrayIcon } from "@heroicons/react/24/outline";
 import Image from "next/image";
 import profilePic from '../../public/profile.png';
+import Experience from "@/components/Experience";
 export default function Home() {
   return (
       <div>
-        <Navbar />
-        <div className="overflow-hidden pt-[10vh] h-[100vh] bg-background-secondary">
+        <div className="pt-[10vh] h-[100vh] bg-background-secondary">
           <div className="h-full flex flex-col sm:flex-row sm:items-center sm:justify-between">
             <div className="text-center sm:text-left p-4 pt-12 sm:pt-4 sm:pl-12 lg:pl-20 sm:w-1/2">
               <div className="text-xl sm:text-2xl text-gray-200 font-semibold pl-1.5">Hello! I&apos;m</div>
@@ -20,11 +19,12 @@ export default function Home() {
             </div>
             <div className="flex justify-end self-end sm:w-1/2">
               <div className="absolute sm:bottom-0 sm:relative pt-8 overflow-hidden">
-                <Image src={profilePic} alt="Profile Image" />
+                <Image src={profilePic} alt="Profile Image" className="object-contain" />
               </div>
             </div>
           </div>
         </div>
+        <Experience />
       </div>
   );
 }
