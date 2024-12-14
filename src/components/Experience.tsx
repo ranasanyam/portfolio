@@ -1,6 +1,6 @@
 'use client';
 import React, { useRef, useState } from 'react';
-import { motion, useScroll, useSpring, useTransform, useInView } from 'framer-motion';
+import { motion, useScroll, useSpring, useInView } from 'framer-motion';
 import Link from 'next/link';
 interface ExperienceItem {
     title: string;
