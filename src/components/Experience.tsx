@@ -39,7 +39,7 @@ const ExperienceCard = ({ exp, index}: { exp: ExperienceItem; index: number}) =>
         >
             
             <motion.div
-            className={`w-1/2 group ${exp.isLeft ? 'text-right pr-2 sm:pr-8' : 'text-left pl-2 sm:pl-8'} cursor-pointer`}
+            className={`xs:w-1/2 group ${exp.isLeft ? 'xs:text-right xs:pr-2 sm:pr-8' : 'xs:text-left xs:pl-2 sm:pl-8'} cursor-pointer`}
             whileHover={{ scale: 1.05 }}
             onHoverStart={() => setIsHovered(true)}
             onHoverEnd={() => setIsHovered(false)}
@@ -56,7 +56,7 @@ const ExperienceCard = ({ exp, index}: { exp: ExperienceItem; index: number}) =>
            
             {/* timeline point */}
             <motion.div
-            className={`absolute ${exp.isLeft ? 'right-1/2' : 'left-1/2'} transform -translate-x-1/2 w-4 h-4 bg-blue-500 rounded-full border-4 border-white z-10`}
+            className={`hidden xs:block absolute ${exp.isLeft ? 'right-1/2' : 'left-1/2'} transform -translate-x-1/2 w-4 h-4 bg-blue-500 rounded-full border-4 border-white z-10`}
             initial={{ scale: 0}}
             animate={isInView ? { scale: isHovered ? 1.5 : 1, backgroundColor: isHovered ? '#00cc66' : '#4BFFA5'} : { scale: 0}}
             transition={{ duration: 0.2 }}
@@ -80,7 +80,7 @@ const Experience = () => {
     })
   return (
     <div className='h-[100vh] relative flex items-center bg-background-primary'>
-        <div ref={ref} className='relative container mx-auto sm:px-6 sm:py-16'>
+        <div ref={ref} className='relative container mx-auto sm:px-6 lg:py-16'>
             <motion.div
             className='absolute left-1/2 transform  w-0.5 h-full bg-gradient-to-b from-text-primary to-text-primary bg-no-repeat'
             style={{
